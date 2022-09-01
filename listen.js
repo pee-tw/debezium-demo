@@ -2,11 +2,11 @@ const { Kafka } = require("kafkajs");
 const ip = require('ip')
 
 const kafka = new Kafka({
-  clientId: "my-app",
-  brokers: [`kafka:9092`],
+  clientId: "my-app1",
+  brokers: [`localhost:9092`],
 });
 
-const consumer = kafka.consumer({ groupId: "1" });
+const consumer = kafka.consumer({ groupId: "2" });
 
 async function consume() {
   await consumer.connect();
