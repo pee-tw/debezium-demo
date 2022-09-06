@@ -1,3 +1,5 @@
+# Commands from Debezium's tutorial -> https://debezium.io/documentation/reference/1.9/tutorial.html
+
 # Zookeeper
 docker run --name zookeeper -p 2181:2181 -p 2888:2888 -p 3888:3888 -d quay.io/debezium/zookeeper:1.9
 
